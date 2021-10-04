@@ -29,17 +29,17 @@ namespace LAB_2._2
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.calc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // calc
             // 
-            this.textBox1.Location = new System.Drawing.Point(57, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 0;
+            this.calc.Location = new System.Drawing.Point(57, 48);
+            this.calc.Name = "calc";
+            this.calc.Size = new System.Drawing.Size(125, 27);
+            this.calc.TabIndex = 0;
             // 
             // label1
             // 
@@ -67,7 +67,7 @@ namespace LAB_2._2
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.calc);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -77,7 +77,7 @@ namespace LAB_2._2
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox calc;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
     }
