@@ -20,9 +20,7 @@ namespace LAB_2._2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string calc;
- 
-            calc = (this.calc.Text);
+            string calc = (this.calc.Text);
             if (String.IsNullOrEmpty(calc))
             {
                 MessageBox.Show("Некорректный ввод", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
