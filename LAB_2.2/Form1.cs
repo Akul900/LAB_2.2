@@ -19,8 +19,17 @@ namespace LAB_2._2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var calc = (this.calc.Text);
-
+            string calc;
+            try // оборачиваем кусок кода склонный к падению
+            {
+                 calc = (this.calc.Text);
+            }
+            catch (FormatException) // тип ошибки, которую перехватываем
+            {
+                MessageBox.Show("Некорректный ввод", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // прерываем обработчик клика, если ввели какую-то ерунду
+            }
+           // var calc1 = calc;
             MessageBox.Show(Logic.CaclString(calc));
         }
     }
@@ -61,7 +70,7 @@ namespace LAB_2._2
             math = math.Replace("-", " -");
             math = math.Trim();
 
-            string[] num = math.Split(new char[] { '+', ' ' });
+            string[] num = math.Split(new char[] { '+', ' ' }, StringSplitOptions.RemoveEmptyEntries);
             foreach (string s in num)
             {
                 result += Convert.ToInt32(s);
