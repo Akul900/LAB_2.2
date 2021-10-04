@@ -15,21 +15,21 @@ namespace LAB_2._2
         public Form1()
         {
             InitializeComponent();
+            calc.Text = Properties.Settings.Default.calc.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string calc;
-            try // оборачиваем кусок кода склонный к падению
-            {
-                 calc = (this.calc.Text);
-            }
-            catch (FormatException) // тип ошибки, которую перехватываем
+ 
+            calc = (this.calc.Text);
+            if (String.IsNullOrEmpty(calc))
             {
                 MessageBox.Show("Некорректный ввод", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // прерываем обработчик клика, если ввели какую-то ерунду
+                return;
             }
-           // var calc1 = calc;
+            Properties.Settings.Default.calc = calc;
+            Properties.Settings.Default.Save();
             MessageBox.Show(Logic.CaclString(calc));
         }
     }
@@ -78,14 +78,6 @@ namespace LAB_2._2
             Console.WriteLine("\nРезультат");
             return result.ToString();
         }
-       /* static void Main(string[] args)
-        {
-            string calc;
-            Console.Write("Введите пример: ");
-            calc = Console.ReadLine();
-            Check(calc);
-            Console.Write(CaclString(calc));
-        }*/
     }
 
 }
