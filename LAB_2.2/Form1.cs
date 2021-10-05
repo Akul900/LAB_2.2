@@ -30,6 +30,8 @@ namespace LAB_2._2
             Properties.Settings.Default.Save();
             MessageBox.Show(Logic.CaclString(calc));
         }
+
+
     }
     class Logic
     {
