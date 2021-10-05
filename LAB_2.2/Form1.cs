@@ -31,9 +31,12 @@ namespace LAB_2._2
             MessageBox.Show(Logic.CaclString(calc));
         }
 
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.calc.Text = "";
+        }
     }
-    class Logic
+   public class Logic
     {
         static bool Check(string text)
         {
