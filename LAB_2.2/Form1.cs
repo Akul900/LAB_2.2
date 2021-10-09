@@ -36,7 +36,7 @@ namespace LAB_2._2
             this.calc.Text = "";
         }
     }
-   public class Logic
+    public class Logic
     {
         static bool Ceredovanie (string text)
         {
