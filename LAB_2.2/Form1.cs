@@ -38,6 +38,21 @@ namespace LAB_2._2
     }
    public class Logic
     {
+        static bool Ceredovanie (string text)
+        {
+            int p = 1;
+            int m = 0;
+            for (int i = 0; i < text.Length - 1; i++)
+            {
+                if (text[i] == '+')
+                    p++;
+                if (text[i] == '-')
+                    m++;
+                if (p == m)
+                    return true;
+            }
+            return false;
+        }
         static bool Check(string text)
         {
 
@@ -56,7 +71,7 @@ namespace LAB_2._2
 
             for (int i = 0; i < text.Length; i++)
             {
-                if (Check(text))
+                if (Check(text) || Ceredovanie(text))
                 {
                     return "Неверная запись выражения";
                 }

@@ -38,15 +38,15 @@ namespace LAB_2._2
             // 
             // calc
             // 
-            this.calc.Location = new System.Drawing.Point(253, 45);
+            this.calc.Location = new System.Drawing.Point(12, 41);
             this.calc.Name = "calc";
-            this.calc.Size = new System.Drawing.Size(125, 27);
+            this.calc.Size = new System.Drawing.Size(366, 27);
             this.calc.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(384, 48);
+            this.label1.Location = new System.Drawing.Point(384, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(150, 20);
             this.label1.TabIndex = 1;
@@ -54,7 +54,7 @@ namespace LAB_2._2
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(253, 78);
+            this.button1.Location = new System.Drawing.Point(56, 78);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 29);
             this.button1.TabIndex = 2;
@@ -74,7 +74,7 @@ namespace LAB_2._2
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(384, 78);
+            this.button2.Location = new System.Drawing.Point(204, 78);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 29);
             this.button2.TabIndex = 4;
@@ -86,7 +86,7 @@ namespace LAB_2._2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 123);
+            this.ClientSize = new System.Drawing.Size(771, 117);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
