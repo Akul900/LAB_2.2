@@ -34,6 +34,8 @@ namespace LAB_2._2
         private void button2_Click(object sender, EventArgs e)
         {
             this.calc.Text = "";
+            Properties.Settings.Default.calc = "";
+            Properties.Settings.Default.Save();
         }
     }
     public class Logic

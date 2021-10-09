@@ -93,7 +93,7 @@ namespace LAB_2._2
             this.Controls.Add(this.label1);
             this.Controls.Add(this.calc);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Калькулятор";
             this.ResumeLayout(false);
             this.PerformLayout();
 
