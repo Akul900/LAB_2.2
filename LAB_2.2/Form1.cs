@@ -40,7 +40,7 @@ namespace LAB_2._2
     }
     public class Logic
     {
-        static bool Ceredovanie (string text)
+        public static bool Ceredovanie (string text)
         {
             int p = 1;
             int m = 0;
@@ -55,7 +55,7 @@ namespace LAB_2._2
             }
             return false;
         }
-        static bool Check(string text)
+        public static bool Check(string text)
         {
 
             for (int i = 0; i < text.Length - 1; i++)
