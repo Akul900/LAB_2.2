@@ -50,7 +50,7 @@ namespace LAB_2._2
                     p++;
                 if (text[i] == '-')
                     m++;
-                if (p == m)
+                if (p == m || (p - m > 2))
                     return true;
             }
             return false;
