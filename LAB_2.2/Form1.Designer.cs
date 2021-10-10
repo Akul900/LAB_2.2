@@ -31,9 +31,9 @@ namespace LAB_2._2
         {
             this.calc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ResultButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // calc
@@ -52,15 +52,15 @@ namespace LAB_2._2
             this.label1.TabIndex = 1;
             this.label1.Text = "Введите выражение";
             // 
-            // button1
+            // ResultButton
             // 
-            this.button1.Location = new System.Drawing.Point(207, 78);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 29);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Результат";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ResultButton.Location = new System.Drawing.Point(207, 78);
+            this.ResultButton.Name = "ResultButton";
+            this.ResultButton.Size = new System.Drawing.Size(125, 29);
+            this.ResultButton.TabIndex = 2;
+            this.ResultButton.Text = "Результат";
+            this.ResultButton.UseVisualStyleBackColor = true;
+            this.ResultButton.Click += new System.EventHandler(this.ResultButton_Click);
             // 
             // label2
             // 
@@ -72,24 +72,24 @@ namespace LAB_2._2
             this.label2.Text = "Дан текст, имеющий вид: d1+d2−d3+...−dn, где di — цифры (n > 1). Вычислить записа" +
     "нную в тексте сумму.";
             // 
-            // button2
+            // ClearButton
             // 
-            this.button2.Location = new System.Drawing.Point(365, 78);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 29);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Очистка";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ClearButton.Location = new System.Drawing.Point(365, 78);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(125, 29);
+            this.ClearButton.TabIndex = 4;
+            this.ClearButton.Text = "Очистка";
+            this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 117);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ResultButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.calc);
             this.Name = "Form1";
@@ -103,9 +103,9 @@ namespace LAB_2._2
 
         private System.Windows.Forms.TextBox calc;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ResultButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ClearButton;
     }
 }
 
